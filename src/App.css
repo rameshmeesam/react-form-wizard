@@ -31,3 +31,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+.wizard-box {
+  background: #f5f3f3;;
+  width: 50%;
+  margin: auto;
+  padding: 4px;
+  box-shadow: 12px 12px 2px 1px rgb(245, 243, 243);
+  margin-top: 10%;
+}
+
+.wizard-box input {  
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    padding: 5px;
+   /* border-color: #dedef5;*/
+}
+
+.wizard-box button {
+  height: 50px;
+  width: 40%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  background: #aeadf3;
+}
+
+.form-box {
+  width: 50%;
+  margin: auto;
+}
+
+.button-box {
+  width: 50%;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
