@@ -15,8 +15,9 @@ export default class Wizard extends React.Component {
                         mobile: '',
                         isDisabled: true
         }
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
-    
+
     componentDidUpdate(){
         console.log("CurrentStep : " + this.state.currentStep);
  
@@ -43,14 +44,17 @@ export default class Wizard extends React.Component {
          }
       }
 
-      onSubmitHandler = (e) => {    
+      handleSubmit = (e) => {    
+    
+        e.preventDefault();
         alert("onSubmitHandler")
+
       }
 
     render() {
         return (
             <div className="wizard-box">
-                <form onSubmit={this.onSubmitHandler}>
+                <form onSubmit={this.handleSubmit}>
 
                     {this.state.currentStep === 1 &&
                         <Step1 stateData={this.state} onChange={this.onChange} />

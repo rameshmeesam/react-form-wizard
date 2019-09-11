@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Wizard from './component/register/Wizard';
+import Login from './component/Login';
 
 function App() {
   return (    
@@ -19,8 +20,6 @@ const Contact = (props) => {
   return <div> Contact Us</div>;
 };
 
-const Login = (props) => {
-  return <div> Login</div>;
-};
+
 
 export default App;
